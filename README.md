@@ -189,11 +189,11 @@ This project was developed to explore and implement core concepts of compiler co
 - Support for additional data types and language constructs.
 - Conditional statements and looping constructs.
 - More comprehensive compiler test cases.
-- Enhanced web IDE interface and compilation visualization.
+- Enhanced web IDE interface and compilation visualisation.
 
 ## Author
 
-**Divyansh Singh Parihar**
+**Divyanshu Singh Parihar**
 
 B.Tech Computer Science and Engineering
 
