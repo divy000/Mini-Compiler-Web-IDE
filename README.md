@@ -203,6 +203,32 @@ This project was developed to explore and implement core concepts of compiler co
 ![Compiler Output](screenshots/compiler-output.png)
 
 
+## Automated Testing
+
+This project includes an automated test suite using Python's built-in `unittest` framework.
+
+The test suite currently contains 10 test cases covering:
+
+- Variable declarations and arithmetic operations
+- Operator precedence
+- Syntax error detection
+- Undeclared variable detection
+- Division-by-zero handling
+- Three Address Code generation
+- Interpreter execution
+- Runtime error handling
+
+### Run Tests
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+### Test Results
+
+All 10 automated tests pass successfully.
+
+
 ## Author
 
 **Divyanshu Singh Parihar**
