@@ -109,5 +109,23 @@ class TestCompiler(unittest.TestCase):
             execute_tac(tac)
 
 
+    def test_lexical_error_location(self):
+        code = "int a = 10;\nprint @;"
+
+        with self.assertRaisesRegex(
+            Exception,
+            r"Lexical Error at line 2, column 7"
+        ):
+            parser.parse(code)
+
+    def test_syntax_error_location(self):
+        code = "int a = 10;\nprint(a 10);"
+
+        with self.assertRaisesRegex(
+            Exception,
+            r"Syntax Error at line 2, column 9"
+        ):
+            parser.parse(code)
+
 if __name__ == "__main__":
     unittest.main()

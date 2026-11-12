@@ -207,15 +207,16 @@ This project was developed to explore and implement core concepts of compiler co
 
 This project includes an automated test suite using Python's built-in `unittest` framework.
 
-The test suite currently contains 10 test cases covering:
+The test suite currently contains **12 test cases** covering:
 
 - Variable declarations and arithmetic operations
-- Operator precedence
-- Syntax error detection
+- Operator precedence and expression evaluation
+- Syntax error detection and error location reporting
+- Lexical error detection and error location reporting
 - Undeclared variable detection
 - Division-by-zero handling
-- Three Address Code generation
-- Interpreter execution
+- Three Address Code (TAC) generation
+- Interpreter execution and output
 - Runtime error handling
 
 ### Run Tests
@@ -226,8 +227,7 @@ python -m unittest discover -s tests -v
 
 ### Test Results
 
-All 10 automated tests pass successfully.
-
+All **12 automated tests pass successfully**.
 
 ## Author
 

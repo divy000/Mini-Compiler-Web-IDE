@@ -47,7 +47,14 @@ def t_newline(t):
     t.lexer.lineno += len(t.value)
 
 def t_error(t):
-    print("Illegal character:", t.value[0])
-    t.lexer.skip(1)
+    line = t.value.count('\n') + t.lexer.lexdata.count('\n', 0, t.lexpos) + 1
+
+    last_newline = t.lexer.lexdata.rfind('\n', 0, t.lexpos)
+    column = t.lexpos - last_newline
+
+    raise Exception(
+        f"Lexical Error at line {line}, column {column}: "
+        f"Illegal character '{t.value[0]}'"
+    )
 
 lexer = lex.lex()
