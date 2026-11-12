@@ -191,6 +191,18 @@ This project was developed to explore and implement core concepts of compiler co
 - More comprehensive compiler test cases.
 - Enhanced web IDE interface and compilation visualisation.
 
+
+## Screenshots
+
+### 1. Web IDE
+
+![Mini Compiler Web IDE](screenshots/compiler-web-ide.png)
+
+### 2. Compiler Output
+
+![Compiler Output](screenshots/compiler-output.png)
+
+
 ## Author
 
 **Divyanshu Singh Parihar**
